@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && createdb chb_poultry 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name init 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-feeding-schedule 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx tsc --noEmit 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma db pull 2>&1 | head -40)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && psql chb_poultry -c \"\\\\dt\" 2>&1)",
+      "Bash(pkill -f \"next dev\" 2>&1; sleep 1; echo \"stopped\")",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-inventory 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-finance 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-egg-production 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npm install next-auth@beta @auth/prisma-adapter bcryptjs && npm install --save-dev @types/bcryptjs 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && node -e \"const p = require\\('./node_modules/next-auth/package.json'\\); console.log\\(p.version\\)\")",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(32\\).toString\\('hex'\\)\\)\")",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npm install --save-dev ts-node 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-auth 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npm run db:seed 2>&1)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/opt/homebrew/opt/postgresql@16/bin:/usr/local/bin:$PATH\" && cd \"/Users/account/Documents/CHB Poultry Management App\" && npx prisma migrate dev --name add-direct-url 2>&1)"
+    ]
+  }
+}
